@@ -11,6 +11,40 @@
 </head>
 
 <body>
+<style>
+
+.row{
+  display:flex;
+  justify-content: space-evenly;
+
+}
+  .container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+.container1 {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+  .item {
+    border:1px solid #ccc;
+  }
+
+  .table-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.table-wrapper table {
+  width: 500px;
+}
+
+  </style>
   <!--  Body Wrapper -->
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
@@ -90,49 +124,7 @@
                 <span class="hide-menu">General Ledger</span>
               </a>
             </li>
-            <br>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Master Data</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:sticker-smile-circle-2-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Reports & Analytics</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:planet-3-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Approval Center</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Audit Trail</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Settings</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+            
         <!-- End Sidebar navigation -->
       </div>
       <!-- End Sidebar scroll-->
@@ -208,35 +200,20 @@
 
         <div class="row g-3">
 
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Total AR Outstanding</div></div>
+          <div class="container">
+            <div class="card"><div class="card-body">Total Cash Balance<br>₱2,450,000</div></div>
+            <div class="card"><div class="card-body">Today's Collections<br>₱85,000</div></div>
+            <div class="card"><div class="card-body">Outstanding Receivables<br>₱610,000</div></div>
+            <div class="card"><div class="card-body">Outstanding Payables<br>₱420,000</div></div>
+            <div class="card"><div class="card-body">Budget Utilization<br>68%</div></div>
+            <div class="card"><div class="card-body">Disbursements This Month<br>₱11,000,000</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Total AR Due</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Today's Collections</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Pending Disbursements</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Budget Utilization (%)</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Ledger Status</div></div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+       
 
 
 <!-- ================= CHARTS SECTION ================= -->
@@ -244,31 +221,19 @@
   <div class="col-12">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title fw-semibold mb-4">Charts</h5>
+        <h5 class="card-title fw-semibold mb-4">Revenue vs Expense Snapshot</h5>
 
         <div class="row g-3">
 
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">AR Aging Buckets</div></div>
+          <div class="container1">
+            <div class="card"><div class="card-body">Patient Revenue<br>₱3,200,000</div></div>
+            <div class="card"><div class="card-body">Insurance Revenue<br>₱2,100,000</div></div>
+            <div class="card"><div class="card-body">Operating Expenses<br>₱3,800,000</div></div>
+            <div class="card"><div class="card-body">Net Operating Income<br>₱150,000,000</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">AP Due Timeline</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Department Budget Usage</div></div>
           </div>
-
-          <div class="col-md-6">
-            <div class="card"><div class="card-body">Cash In vs Cash Out</div></div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- ================= ALERTS SECTION ================= -->
@@ -276,24 +241,143 @@
   <div class="col-12">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title fw-semibold mb-4">Alerts</h5>
+        <h5 class="card-title fw-semibold mb-4">Receivables & Payables Overview</h5>
+
+        <div class="row g-3">
+
+          <div class="container">
+            <div class="card"><div class="card-body">Total Outstanding<br>₱612,500</div></div>
+            <div class="card"><div class="card-body">Overdue Accounts<br>6<br>₱148,300</div></div>
+            <div class="card"><div class="card-body">Average collection Days<br>32<br>Jan-Feb 2026</div></div>
+            <div class="card"><div class="card-body">Due This Week<br>4<br>₱168,500<br>Mar 2-Mar 8</div></div>
+            <div class="card"><div class="card-body">Overdue Payables<br>3<br>₱91,500</div></div>
+            <div class="card"><div class="card-body">Scheduled Payments<br>5<br>₱214,000</div></div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+        
+
+<div class="row">
+
+  <!-- LEFT CARD -->
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Budget Status Panel</h5>
+
+        <div class="table-wrapper">
+          <table class="table table-bordered text-center mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Department</th>
+                <th>Budget Used</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Emergency</td>
+                <td>78%</td>
+                <td class="text-success fw-semibold">On Track</td>
+              </tr>
+              <tr>
+                <td>Radiology</td>
+                <td>102%</td>
+                <td class="text-danger fw-semibold">Over Budget</td>
+              </tr>
+              <tr>
+                <td>Pharmacy</td>
+                <td>66%</td>
+                <td class="text-success fw-semibold">On Track</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT CARD -->
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Financial Alerts & Actions</h5>
+        <div class="card"><div class="card-body fw-semibold text-danger">Critical Alerts<br>-HealthPlus Insurance<br>₱65,000 overdue (14 days)</div></div>
+        <div class="card"><div class="card-body fw-semibold">Information<br>-HealthPlus Insurance<br>₱65,000 overdue (14 days)</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Disbursement Activity</h5>
+
+        <div class="row g-3">
+
+          <div class="container">
+            <div class="card"><div class="card-body">Pending Releases</div></div>
+            <div class="card"><div class="card-body">Payments Released Today</div></div>
+            <div class="card"><div class="card-body">Approved Awaiting Payment</div></div>
+            
+</div>         
+ </div>
+
+</div>
+</div>
+          </div>
+          </div>
+          </div>
+
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Financial Alerts  Actions</h5>
+
+        <div class="row g-3">
+
+          <div class="container1">
+            <div class="card"><div class="card-body">Overdue receivables</div></div>
+            <div class="card"><div class="card-body">Department exceeded budget</div></div>
+            <div class="card"><div class="card-body">Pending approvals awaiting finance manager</div></div>
+            <div class="card"><div class="card-body">Period closing approaching</div></div>
+          </div>
+          </div>
+          </div>
+          </div>
+
+        
+
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">General Ledger Snapshot</h5>
 
         <div class="row g-3">
 
           <div class="col-md-6">
-            <div class="card"><div class="card-body">Overdue Invoices</div></div>
+            <div class="card"><div class="card-body">Current Period</div></div>
           </div>
 
           <div class="col-md-6">
-            <div class="card"><div class="card-body">Budget Overrun Risk</div></div>
+            <div class="card"><div class="card-body">Trial Balance Status</div></div>
           </div>
 
           <div class="col-md-6">
-            <div class="card"><div class="card-body">Unposted Journal Entries</div></div>
+            <div class="card"><div class="card-body">Last Posting Time</div></div>
           </div>
 
           <div class="col-md-6">
-            <div class="card"><div class="card-body">Approval Bottlenecks</div></div>
+            <div class="card"><div class="card-body">Unreviewed Journal Entries</div></div>
           </div>
 
         </div>
@@ -301,15 +385,21 @@
     </div>
   </div>
 </div>
- 
-              
-                    
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
                   </fieldset>
                 </form>
               </div>
             </div>
           </div>
         </div>
+
+        
         <div class="py-6 px-6 text-center">
           <p class="mb-0 fs-4">Design and Developed by <a href="https://adminmart.com/" target="_blank"
               class="pe-1 text-primary text-decoration-underline">AdminMart.com</a> Distributed by <a href="https://themewagon.com/" target="_blank"

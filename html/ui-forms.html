@@ -90,49 +90,7 @@
                 <span class="hide-menu">General Ledger</span>
               </a>
             </li>
-            <br>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Master Data</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:sticker-smile-circle-2-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Reports & Analytics</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:planet-3-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Approval Center</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Audit Trail</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Settings</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+                    </nav>
         <!-- End Sidebar navigation -->
       </div>
       <!-- End Sidebar scroll-->
@@ -158,11 +116,20 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="#" target="_blank"
-                class="btn btn-primary me-2"><span class="d-none d-md-block">Check Pro Version</span> <span class="d-block d-md-none">Pro</span></a>
-              <a href="#" target="_blank"
-                class="btn btn-success"><span class="d-none d-md-block">Download Free </span> <span class="d-block d-md-none">Free</span></a>
-              <li class="nav-item dropdown">
+             <div class="d-flex align-items-center ms-auto">
+
+      <!-- 🔍 Search -->
+      <form class="d-flex align-items-center me-3">
+        <input class="form-control me-2" 
+               type="text" 
+               name="q" 
+               placeholder="Search..."
+               style="width: 250px;">
+        <button class="btn btn-success" type="submit">
+          <img src="../assets/images/logos/1167055.png" width="14" height="14">
+        </button>
+      </form>
+
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
@@ -192,55 +159,252 @@
       <!--  Header End -->
       <div class="container-fluid">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">Forms</h5>
-            <div class="card">
-              <div class="card-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
-            </div>
-            <h5 class="card-title fw-semibold mb-4">Disabled forms</h5>
-            <div class="card mb-0">
-              <div class="card-body">
-                <form>
-                  <fieldset disabled>
-                    <legend>Disabled fieldset example</legend>
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Disabled input</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                    </div>
-                    <div class="mb-3">
-                      <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                      <select id="disabledSelect" class="form-select">
-                        <option>Disabled select</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                        <label class="form-check-label" for="disabledFieldsetCheck">
-                          Can't check this
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </fieldset>
-                </form>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+      </div>
+
+      <!-- Table -->
+      
+    <div class="card-body">
+
+      <!-- Header -->
+      <!-- Table -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">KPI Cards</h5>
+      </div>
+
+      <!-- Table -->
+      <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Total Pending Requests</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Approved but Unreleased</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Released Today</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Returned for Correction</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">This Month's Disbursement Total</div></div>
+          </div>
+
+        </div>
+        </div>
+</div>
+
+
+        <div class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Disbursement Requests</h5>
+
+        <form class="d-flex">
+          <select class="form-select" style="width: 250px;">
+            <option selected disabled>Search by filter...</option>
+            <option value="patient_name">Department</option>
+            <option value="payment_id">Request Type</option>
+            <option value="bill_id">Amount</option>
+            <option value="patient_name">Status</option>
+          </select>
+        </form>
+      </div>
+      
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Request ID</th>
+              <th>Department</th>
+              <th>Request Type</th>
+              <th>Amount</th>
+              <th>Date Submitted</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DR-001</td>
+              <td>Emergency</td>
+              <td >Supplier Payment</td>
+              <td>₱15,000</td>
+              <td>02-10-26</td>
+              <td class="text-decoration-underline fw-semibold">Under Review</td>
+              <td>View</td>
+            </tr>
+
+            <tr>
+              <td>DR-002</td>
+              <td>Radiology</td>
+              <td>Equipment Repair</td>
+              <td>₱8,500</td>
+              <td>02-09-26</td>
+              <td class="text-success fw-semibold">Approved</td>
+              <td>View</td>
+            </tr>
+
+            <tr>
+              <td>DR-003</td>
+              <td>Pharmacy</td>
+              <td >Reimbursement</td>
+              <td>₱1,200</td>
+              <td>02-08-26</td>
+              <td class="text-danger fw-semibold">Returned</td>
+              <td>Edit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+          
+      <div class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Approvals Section</h5>
+
+        <form class="d-flex">
+          <select class="form-select" style="width: 250px;">
+            <option selected disabled>Search by filter...</option>
+            <option value="patient_name">Department</option>
+            <option value="payment_id">Request Type</option>
+            <option value="bill_id">Amount</option>
+            <option value="patient_name">Status</option>
+          </select>
+        </form>
+      </div>
+      
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Request ID</th>
+              <th>Department</th>
+              <th>Amount</th>
+              <th>Current Stage</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DR-001</td>
+              <td>Emergency</td>
+              <td>₱15,000</td>
+              <td>Finance Officer</td>
+              <td class="text-decoration-underline fw-semibold">Pending</td>
+              <td>Review</td>
+            </tr>
+
+            <tr>
+              <td>DR-002</td>
+              <td>Radiology</td>
+              <td>₱8,500</td>
+              <td>Administrator</td>
+              <td class="text-decoration-underline fw-semibold">Pending</td>
+              <td>Review</td>
+            </tr>
+
+            <tr>
+              <td>DR-003</td>
+              <td>Pharmacy</td>
+              <td>₱1,200</td>
+              <td>Accounting</td>
+              <td class="text-danger fw-semibold">Returned</td>
+              <td>Comment</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Payment Release</h5>
+
+        <form class="d-flex">
+          <select class="form-select" style="width: 250px;">
+            <option selected disabled>Search by filter...</option>
+            <option value="patient_name">Department</option>
+            <option value="payment_id">Request Type</option>
+            <option value="bill_id">Amount</option>
+            <option value="patient_name">Status</option>
+          </select>
+        </form>
+      </div>
+      
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Voucher No.</th>
+              <th>Request ID</th>
+              <th>Payee</th>
+              <th>Amount</th>
+              <th>Payment Method</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DV-2101</td>
+              <td>DR-002</td>
+              <td>MedSupply Co</td>
+              <td>₱8,500</td>
+              <td>Bank Transfer</td>
+              <td class="text-decoration-underline fw-semibold">Ready to Release</td>
+              <td>Release</td>
+              
+            </tr>
+
+            <tr>
+              <td>DV-2102</td>
+              <td>DR-004</td>
+              <td>Utility Co</td>
+              <td>₱5,200</td>
+              <td>Check</td>
+              <td class="text-success fw-semibold">Release</td>
+              <td>View</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+      
+      
+
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>    
+          </div>   
+           </div>
+           </div>
+           </div>
+           </div>
               </div>
             </div>
           </div>

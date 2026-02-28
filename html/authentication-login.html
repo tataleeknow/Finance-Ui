@@ -90,48 +90,7 @@
                 <span class="hide-menu">General Ledger</span>
               </a>
             </li>
-            <br>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Master Data</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:sticker-smile-circle-2-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Reports & Analytics</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:planet-3-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Approval Center</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Audit Trail</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <iconify-icon icon="solar:danger-circle-bold-duotone" class="fs-6"></iconify-icon>
-                </span>
-                <span class="hide-menu">Settings</span>
-              </a>
-            </li>
-          </ul>
+            
         </nav>
         <!-- End Sidebar navigation -->
       </div>
@@ -158,11 +117,20 @@
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
-              <a href="#" target="_blank"
-                class="btn btn-primary me-2"><span class="d-none d-md-block">Check Pro Version</span> <span class="d-block d-md-none">Pro</span></a>
-              <a href="#" target="_blank"
-                class="btn btn-success"><span class="d-none d-md-block">Download Free </span> <span class="d-block d-md-none">Free</span></a>
-              <li class="nav-item dropdown">
+             <div class="d-flex align-items-center ms-auto">
+
+      <!-- 🔍 Search -->
+      <form class="d-flex align-items-center me-3">
+        <input class="form-control me-2" 
+               type="text" 
+               name="q" 
+               placeholder="Search..."
+               style="width: 250px;">
+        <button class="btn btn-success" type="submit">
+          <img src="../assets/images/logos/1167055.png" width="14" height="14">
+        </button>
+      </form>
+
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
@@ -192,55 +160,245 @@
       <!--  Header End -->
       <div class="container-fluid">
         <div class="card">
-          <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">Forms</h5>
-            <div class="card">
-              <div class="card-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
-            </div>
-            <h5 class="card-title fw-semibold mb-4">Disabled forms</h5>
-            <div class="card mb-0">
-              <div class="card-body">
-                <form>
-                  <fieldset disabled>
-                    <legend>Disabled fieldset example</legend>
-                    <div class="mb-3">
-                      <label for="disabledTextInput" class="form-label">Disabled input</label>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                    </div>
-                    <div class="mb-3">
-                      <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                      <select id="disabledSelect" class="form-select">
-                        <option>Disabled select</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                        <label class="form-check-label" for="disabledFieldsetCheck">
-                          Can't check this
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </fieldset>
-                </form>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+      </div>
+
+      <!-- Table -->
+      
+    <div class="card-body">
+
+      <!-- Header -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Top KPI Cards</h5>
+      </div>
+
+      <!-- Table -->
+      <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Total Debits</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Total Credits</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Unreviewed Journal Entries</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Returned for Correction</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Current Period Status</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">GL Balance Summary</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Posting Activity Trend</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Recent Corrections</div></div>
+          </div>
+
+        </div>
+        </div>
+</div>
+
+
+        <div class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Journal Entries</h5>
+
+        <form class="d-flex">
+          <select class="form-select" style="width: 250px;">
+            <option selected disabled>Search by filter...</option>
+            <option value="patient_name">Draft</option>
+            <option value="payment_id">Posted</option>
+            <option value="bill_id">Pending Review</option>
+            <option value="patient_name">Returned</option>
+            <option value="patient_name">Corrected</option>
+          </select>
+        </form>
+      </div>
+      
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>JE#</th>
+              <th>Source Module</th>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Debit</th>
+              <th>Credit</th>
+              <th>Status</th>
+              <th>Reviwed By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JE-2026-001</td>
+              <td>AR</td>
+              <td >02-15-26</td>
+              <td>Patient Payment</td>
+              <td>₱1,200</td>
+              <td>₱1,200</td>
+              <td class="text-success fw-semibold">Posted</td>
+              <td>Supervisor</td>
+            </tr>
+
+            <tr>
+              <td>JE-2026-002</td>
+              <td>AP</td>
+              <td >02-16-26</td>
+              <td>Vendor Payment</td>
+              <td>₱4,800</td>
+              <td>₱4,800</td>
+              <td class="text-decoration-underline fw-semibold">Pending Review</td>
+              <td>NA</td>
+            </tr>
+
+            <tr>
+              <td>JE-2026-003</td>
+              <td>Disbursement</td>
+              <td >02-17-26</td>
+              <td>Bank Transfer</td>
+              <td>₱12,500</td>
+              <td>₱12,500</td>
+              <td class="text-danger fw-semibold">Returned</td>
+              <td>Supervisor</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+          
+      <div class="card">
+    <div class="card-body">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Chart of Accounts</h5>
+
+        <form class="d-flex">
+        </form>
+      </div>
+      
+
+      <!-- Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Account Code</th>
+              <th>Account Name</th>
+              <th>Type</th>
+              <th>Balance</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <tr>
+              <td>1000</td>
+              <td>Cash</td>
+              <td>Asset</td>
+              <td>₱250,000</td>
+              <td class="text-success fw-semibold">Active</td>
+            </tr>
+
+            <tr>
+              <td>1100</td>
+              <td>Accounts Receivable</td>
+              <td>Asset</td>
+              <td>₱180,000</td>
+              <td class="text-success fw-semibold">Active</td>
+            </tr>
+
+            <tr>
+              <td>2000</td>
+              <td>Accounts Payable</td>
+              <td>Liability</td>
+              <td>₱90,000</td>
+              <td class="text-success fw-semibold">Active</td>
+            </tr>
+
+            <tr>
+              <td>4000</td>
+              <td>Service Revenue</td>
+              <td>Revenue</td>
+              <td>₱500,000</td>
+              <td class="text-success fw-semibold">Active</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="card">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+      </div>
+<div class="card-body">
+
+      <!-- Header -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h5 class="card-title fw-semibold mb-0">Reports Section</h5>
+      </div>
+
+      <!-- Table -->
+      <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Trial Balance</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">General Ledger Detail</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Balance Sheet</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Income Statement</div></div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card"><div class="card-body">Period Closing Summary</div></div>
+          </div>
+
+        </div>
+        </div>
+</div>
+      
+      
+
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>    
+          </div>   
+           </div>
+           </div>
+           </div>
+           </div>
               </div>
             </div>
           </div>
